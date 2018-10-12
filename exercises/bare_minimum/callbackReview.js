@@ -12,7 +12,7 @@ var pluckFirstLineFromFile = function (filePath,callback) {
       console.log('yo shit fucked up bro' )
       callback(err)
     } else {
-      callback(null, content.toString().slice(0, 22 ))
+      callback(null, content.toString().split('\n')[0])
     }
   })
 };
